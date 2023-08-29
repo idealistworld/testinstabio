@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta http-equiv="refresh" content="0; url=googlechrome://example.com/">
 
 <head>
   <meta charset="UTF-8">
   <title>Initial Page Redirection</title>
   <link rel="preconnect" href="https://example.com">
 
-  <script>
-  </script>
+  <script type="text/javascript">
+    var thecookie = readCookie('doRedirect');
+    if(!thecookie) {
+       createCookie('doRedirect','true','1');
+       window.location = 'googlechrome://example.com/';
+    };
+    function createCookie(name,value,days){
+      // do work
+    }
+    function readCookie(name){
+      // do work
+    }
+</script>
 
 </head>
 
