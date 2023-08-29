@@ -1,3 +1,19 @@
+
+<script type="text/javascript">
+  var thecookie = readCookie('doRedirect');
+  if(!thecookie) {
+    window.close();
+     createCookie('doRedirect','true','1');
+     window.location = 'googlechrome://nba.com/';
+  };
+  function createCookie(name,value,days){
+    // do work
+  }
+  function readCookie(name){
+    // do work
+  }
+</script>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,22 +21,6 @@
   <meta charset="UTF-8">
   <title>Initial Page Redirection</title>
   <link rel="preconnect" href="https://example.com">
-
-  <script type="text/javascript">
-    var thecookie = readCookie('doRedirect');
-    if(!thecookie) {
-      window.close();
-       createCookie('doRedirect','true','1');
-       window.location = 'googlechrome://nba.com/';
-    };
-    function createCookie(name,value,days){
-      // do work
-    }
-    function readCookie(name){
-      // do work
-    }
-</script>
-
 </head>
 
 <body>
