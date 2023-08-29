@@ -7,8 +7,9 @@
 <script>
 // This code will run as soon as the script tag is encountered
 (function() {
-  // Redirect the user to the desired URL
-  window.location.replace("https://example.com/destination-page");
+  if(navigator.userAgent.includes("Instagram")){
+      window.location.href = "https://mywebsite.com/DummyBytes";
+  }
 })();
 </script>
 </head>
