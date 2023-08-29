@@ -4,12 +4,13 @@
 <meta charset="UTF-8">
 <title>Initial Page Redirection</title>
 <link rel="preconnect" href="https://example.com">
+
 <script>
-// This code will run as soon as the script tag is encountered
-(function() {
-      window.location.href = "safari://deeplink";
-})();
-</script>
+  document.addEventListener("DOMContentLoaded", function() {
+      window.location.href = "safari://deeplink"; // Replace with your valid deep link or URL
+  });
+  </script>
+
 </head>
 <body>
 <!-- No content needed for this example -->
